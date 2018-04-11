@@ -1,5 +1,5 @@
 ### Installation
-npm install react-native-maps-direction-uri --save
+npm install @remobile/react-native-maps-direction-uri --save
 
 ### Installation (Android)
 - settings.gradle `
