@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/smt/ghgWorkspace/company/PDClient/project/App/node_modules/@remobile/react-native-maps-direction-uri/android/src/main/assets"/></dataSet><dataSet config="release"><source path="/Users/smt/ghgWorkspace/company/PDClient/project/App/node_modules/@remobile/react-native-maps-direction-uri/android/src/release/assets"/></dataSet></merger>
