@@ -46,18 +46,20 @@ public class MapsDirectionUriModule extends BaseModule{
             try{
                 Intent loction = new Intent(Intent.ACTION_VIEW, mapUri);
                 this.getCurrentActivity().startActivity(loction);
+                callback.invoke(true);
             }catch (ActivityNotFoundException a){
                 Log.i("----------------a.getMessage()", a.getMessage());
                 callback.invoke(false);
             }
         } else if (type.equals("iosa")) {
-            String uri = "http://uri.amap.com/navigation?from=%1$s,%2$s,%3$s&to=%4$s,%5$s,%6$s&mode=car&policy=1&src=mypage&coordinate=gaode&callnative=0";
+            String uri = "http://uri.amap.com/navigation?from=%1$s,%2$s,%3$s&to=%4$s,%5$s,%6$s&mode=car&policy=1&src=mypage&coordinate=gaode&callnative=1";
 
             Uri mapUri = Uri.parse(String.format(uri,  startLatitude, startLongitude, "我的位置", endtLatitude, endLongitude, "目的地"));
             Log.i("----------------mapUri", String.valueOf(mapUri));
             try{
                 Intent loction = new Intent(Intent.ACTION_VIEW, mapUri);
                 this.getCurrentActivity().startActivity(loction);
+                callback.invoke(true);
             }catch (ActivityNotFoundException a){
                 Log.i("----------------a.getMessage()", a.getMessage());
                 callback.invoke(false);
@@ -69,17 +71,19 @@ public class MapsDirectionUriModule extends BaseModule{
             try{
                 Intent loction = new Intent(Intent.ACTION_VIEW, mapUri);
                 this.getCurrentActivity().startActivity(loction);
+                callback.invoke(true);
             }catch (ActivityNotFoundException a){
                 Log.i("----------------a.getMessage()", a.getMessage());
                 callback.invoke(false);
             }
         } else if (type.equals("qq")) {
-            String uri = "http://apis.map.qq.com/uri/v1/routeplan?type=drive&from=%1$s&fromcoord=%2$s,%3$s&to=%4$s&tocoord=%5$s,%6$s&policy=0&referer=myapp";
+            String uri = "http://apis.map.qq.com/uri/v1/routeplan?type=drive&from=%1$s&fromcoord=%2$s,%3$s&to=%4$s&tocoord=%5$s,%6$s&policy=0&referer=smt";
             Uri mapUri = Uri.parse(String.format(uri, "我的位置", startLatitude, startLongitude, "目的地",  endtLatitude, endLongitude));
             Log.i("----------------mapUri", String.valueOf(mapUri));
             try{
                 Intent loction = new Intent(Intent.ACTION_VIEW, mapUri);
                 this.getCurrentActivity().startActivity(loction);
+                callback.invoke(true);
             }catch (ActivityNotFoundException a){
                 Log.i("----------------a.getMessage()", a.getMessage());
                 callback.invoke(false);
