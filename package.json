@@ -1,6 +1,6 @@
 {
   "name": "@remobile/react-native-maps-direction-uri",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a map direction use uri mode for react native, ios map,qq map,baidu map,iosa map be supported.",
   "main": "index.js",
   "scripts": {
